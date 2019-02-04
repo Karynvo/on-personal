@@ -1,0 +1,14 @@
+<header>
+    <ul class="navigation">
+        <li>
+            <a href="/" class="logo">Title</a>
+        </li>
+        
+        <li>
+            {% for page in site.pages %}
+                <a href="{{ page.url }}">{{ page.title }}</a>
+            {% endfor %}
+        </li>
+        
+    </ul>
+</header>

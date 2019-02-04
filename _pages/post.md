@@ -1,0 +1,9 @@
+---
+permalink: /posts/
+layout: default
+title: Posts
+---
+
+{% for post in site.posts %}
+<a href="{{ post.url }}">{{ post.title }} at {{ post.date }}</a>
+{% endfor %}

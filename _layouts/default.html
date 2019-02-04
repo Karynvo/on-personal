@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="/assets/css/home.css"></link>
+        <!-- <link rel="stylesheet" href="/assets/css/default.css"></link> -->
+    </head>
+    <body>
+        <main>
+            <div class="left">
+                {%- include header.html -%}
+            </div>
+            <div class="gallery">
+                {{ content }}
+            </div>
+        </main>
+        {%- include footer.html -%}
+    </body>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+    <script src="{{site.baseurl}}/assets/js/home.js"></script>
+    <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+</html>
